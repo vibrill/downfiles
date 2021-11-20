@@ -15,7 +15,7 @@ func DownloadFiles() []fs.FileInfo {
 	files, err := ioutil.ReadDir(string(u) + `\Downloads`)
 	if err != nil {
 		//assign download folder to D:\Downloads if not found in user folder
-		fmt.Println(`D:\Downloads`)
+		//fmt.Println(`D:\Downloads`)
 		files, err = ioutil.ReadDir(`D:\Downloads`)
 	} else {
 		fmt.Println(string(u) + `\Downloads`)
